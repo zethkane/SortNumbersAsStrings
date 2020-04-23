@@ -34,5 +34,7 @@ public class TestSorter {
 
         //Will be using regex to check each entry, if it was to convert to the number ex ("nine" -> "9") would hardcode each if statement unless there was a library already made to by someone to do so.
         //Will see if regex will work with the keeping them in word form.
+
+        //if we convert the word form into a number then compare the numbers created to each other then insert the word form back into the array in the order
     }
 }
