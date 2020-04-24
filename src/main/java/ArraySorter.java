@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -9,7 +11,7 @@ public class ArraySorter {
         ArrayList<String> stringsLessThan2 = new ArrayList<>();
         ArrayList<String> stringsGreaterThan1 = new ArrayList<>();
         ArrayList<String> stringsAsWords = new ArrayList<>();
-        String regex = "^[A-Za-z]";
+        String regex = "^[a-z]";
         Pattern pattern = Pattern.compile(regex);
 
         for (int i = 0; i < arr.length; i++) {
@@ -20,9 +22,7 @@ public class ArraySorter {
             if (arr[i].length() > 1){
                 stringsGreaterThan1.add(arr[i]);
             }
-            if (arr[i].equals(matcher)){
-                stringsAsWords.add(arr[i]);
-            }
+
         }
         String[] sortedLessThan2 = sortLengthLessThanTwo(stringsLessThan2);
         String[] sortedGreaterThan1 = sortLengthGreaterThanOne(stringsGreaterThan1);
@@ -80,6 +80,77 @@ public class ArraySorter {
     }
 
     public static String[] sortNumbersAsWords(ArrayList<String> arr){
+        Map<String, String> wordsAndNumbers = new HashMap<>();
+
         return null;
+    }
+
+    public static String matchWordWithNumberLessThan20(String word){
+        if (word.equals("one")){
+            return "1";
+        }
+        if (word.equals("two")){
+            return "2";
+        }
+        if (word.equals("three")){
+            return "3";
+        }
+        if (word.equals("four")){
+            return "4";
+        }
+        if (word.equals("five")){
+            return "5";
+        }
+        if (word.equals("six")){
+            return "6";
+        }
+        if (word.equals("seven")){
+            return "7";
+        }
+        if (word.equals("eight")){
+            return "8";
+        }
+        if (word.equals("nine")){
+            return "9";
+        }
+        if (word.equals("ten")){
+            return "10";
+        }
+        if (word.equals("eleven")){
+            return "11";
+        }
+        if (word.equals("twelve")){
+            return "12";
+        }
+        if (word.equals("thirteen")){
+            return "13";
+        }
+        if (word.equals("fourteen")){
+            return "14";
+        }
+        if (word.equals("fifteen")){
+            return "15";
+        }
+        if (word.equals("sixteen")){
+            return "16";
+        }
+        if (word.equals("seventeen")){
+            return "17";
+        }
+        if (word.equals("eighteen")){
+            return "18";
+        }
+        if (word.equals("nineteen")){
+            return "19";
+        }
+
+        return "0";
+
+    }
+
+    public static String matchWordWithNumberGreaterThan20(String word){
+        String number = "";
+
+        return number;
     }
 }
