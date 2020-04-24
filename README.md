@@ -3,4 +3,4 @@
 
 As a after mock interview assignment with Jack Harris
 
-Code should include teh method and tests for the method.
+Code should include the method and tests for the method.
